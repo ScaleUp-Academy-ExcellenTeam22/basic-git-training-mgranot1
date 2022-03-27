@@ -1,11 +1,20 @@
 import glob
 
 
+
 def deep():
-    path = input("enter path:")
-    my_files = glob.glob(path + "\deep*")
-    for file in my_files:
-        print(file[len(path) + 1:])
+    """
+    print list of files called deep...
+    """
+    path = input("Enter Path: ")
+    my_files = glob.glob(path + r"\deep*")
+    print([file[len(path) + 1:] for file in my_files])
 
 
-deep()
+def main():
+    deep()
+
+
+if __name__ == "__main__":
+    main()
+

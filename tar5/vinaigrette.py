@@ -18,7 +18,7 @@ def random_date(start_date, end_date):
 def if_monday():
     """
     The function picks up two dates from the user and sends to the function for a random date between them.
-     For a date that is Monday a message will be printed
+    For a date that is Monday a message will be printed
     """
     start_date = datetime.strptime(input("Enter Date 1: "), '%m-%d-%Y')
     end_date = datetime.strptime(input("Enter Date 2: "), '%m-%d-%Y')

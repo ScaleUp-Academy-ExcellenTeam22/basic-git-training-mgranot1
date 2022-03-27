@@ -4,7 +4,7 @@ import glob
 
 def deep():
     """
-    print list of files called deep...
+    print a list of all the files that starts with "deep"
     """
     path = input("Enter Path: ")
     my_files = glob.glob(path + r"\deep*")

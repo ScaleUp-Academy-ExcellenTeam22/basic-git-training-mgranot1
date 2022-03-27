@@ -1,8 +1,9 @@
 def join(*lists, sep='-'):
       """
-    :param lists:
-    :param sep: to be between the lists
-    :return: A new list from a combination of all the lists we received with a mark between them
+    :param lists:  group of sent lists, which we connect to one list with a character (sep) separating them.
+    :param sep: will be in the returned list, between each pair of lists sent in the lists parameter.
+                If no such parameter is sent, the default will be the character '-'.
+    :return: A new list from a combination of all the lists we received with a mark between them.
     """
     if len(lists) == 0:
         return None

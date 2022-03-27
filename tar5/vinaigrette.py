@@ -20,8 +20,8 @@ def if_monday():
     The function picks up two dates from the user and sends to the function for a random date between them.
      For a date that is Monday a message will be printed
     """
-    start_date = datetime.strptime(input("enter date 1: "), '%m-%d-%Y')
-    end_date = datetime.strptime(input("enter date 2: "), '%m-%d-%Y')
+    start_date = datetime.strptime(input("Enter Date 1: "), '%m-%d-%Y')
+    end_date = datetime.strptime(input("Enter Date 2: "), '%m-%d-%Y')
     my_date = random_date(start_date, end_date)
     print(my_date)
     if calendar.day_name[my_date.weekday()] == 'Monday':
